@@ -1,0 +1,80 @@
+
+.overlay {
+  width: 50vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+  float: right;
+  right: 0;
+  position: fixed;
+}
+
+.sidenav {
+  height: 100vh;
+  position: fixed;
+  width: 50vw;
+  background-color: whitesmoke;
+}
+
+.nav-icon {
+  padding-right: 16px;
+}
+
+.nav-list {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 16px;
+  padding-inline-end: 64px;
+}
+
+.nav-item {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: #364156;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+}
+
+.nav-brand .logo-text {
+  padding-left: 12px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #011638;
+}
+
+/* tablets -- 768px+ */
+@media only screen and (min-width: 768px) {
+
+  .overlay {
+    width: 67vw;
+  }
+
+  .sidenav {
+    width: 33vw;
+  }
+
+}
+
+/* laptops -- 1024 */
+@media only screen and (min-width: 1024px) {
+  .overlay {
+    width: 0;
+  }
+
+  .sidenav {
+    width: 20vw;
+  }
+}

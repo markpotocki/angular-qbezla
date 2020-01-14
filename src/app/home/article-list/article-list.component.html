@@ -1,0 +1,31 @@
+<div class="card-list">
+  
+  <div *ngIf="this.articles == null" class="spinner">
+    <app-spinner></app-spinner>
+  </div>
+
+  <div *ngIf="this.articles != null && isEmpty()">
+    No articles to display
+  </div>
+
+	<div class="card" href="#" *ngFor="let article of articles">
+
+		<div class="card-header">
+      <img class="card-img" src="{{article.imgURL}}" />
+		</div>
+
+		<div class="card-body">
+      <h2 class="card-title">{{article.title}}</h2>
+      <h3 class="card-date">{{article.date | date }}</h3>
+      <p class="card-text">
+        {{article.body}}
+      </p>
+		</div>
+
+		<div class="card-footer">
+
+		</div>
+
+	</div>
+  
+</div>

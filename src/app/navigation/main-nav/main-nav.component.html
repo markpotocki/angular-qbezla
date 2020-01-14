@@ -1,0 +1,18 @@
+<div #navbar class="navbar">
+
+  <div class="nav-items">
+    <div class="nav-item" (click)="openSideNav()">
+      <fa-icon [icon]="menuButton"></fa-icon>
+    </div>
+    <div class="nav-item">
+      <fa-stack>
+        <fa-icon [icon]="logoBorder" stackItemSize="2x"></fa-icon>
+        <fa-icon [icon]="logo" stackItemSize="1x" inverse="true" [classes]="['nav-logo']"></fa-icon>
+      </fa-stack>
+    </div>
+    <div class="nav-item">
+      <fa-icon [icon]="userButton"></fa-icon>
+    </div>
+  </div>
+
+</div>

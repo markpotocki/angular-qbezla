@@ -1,0 +1,29 @@
+.meter-container {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.meter {
+  background-color: #dff8eb;
+  width: 100%;
+}
+
+.meter-fill {
+  background-color: #214e34;
+  width: 0%;
+  height: 100%;
+  position: relative;
+}
+
+.meter-fill span {
+  padding-left: 8px;
+}
+
+.meter-info {
+  padding-left: 8px;
+}
+
+.meter-fill div {
+  padding-left: 8px;
+}

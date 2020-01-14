@@ -1,0 +1,27 @@
+<div class="overlay" (click)="toggle()" *ngIf="isOpen" @ShowHideOverlay>
+</div>
+<div class="sidenav" @ShowHideSideNav *ngIf="isOpen">
+	<div class="nav-brand">
+		<div class="logo">
+			<fa-stack>
+				<fa-icon [icon]="logoBorder" [styles]="{'color': '#214e34'}" stackItemSize="2x"></fa-icon>
+				<fa-icon [icon]="logo" [styles]="{'color': '#364156'}" stackItemSize="1x" inverse="true"
+					[classes]="['nav-logo']"></fa-icon>
+			</fa-stack>
+		</div>
+		<div class="logo-text">
+			Elaf
+		</div>
+	</div>
+
+
+	<ul class="nav-list">
+		<li class="nav-item" *ngFor="let navItem of navItems">
+			<a [href]="navItem.goto" routerLink="navItem.goto">
+				<fa-icon [icon]="navItem.faIcon" [classes]="['nav-icon']"></fa-icon>
+				{{ navItem.name }}
+			</a>
+		</li>
+
+	</ul>
+</div>

@@ -1,0 +1,15 @@
+
+.navbar {
+  width: 100vw;
+  height: 40px;
+  top: 0;
+}
+
+.nav-items {
+  color: #DFF8EB;
+  display: flex;
+  padding: 0 12px 0 12px;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
